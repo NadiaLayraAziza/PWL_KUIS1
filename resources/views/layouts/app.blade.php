@@ -1,83 +1,220 @@
-<!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <title>New Vision HTML CSS Template</title>
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet" /> <!-- https://fonts.google.com/specimen/Open+Sans?selection.family=Open+Sans -->
+    <link href="css/all.min.css" rel="stylesheet" /> <!-- https://fontawesome.com/ -->
+    <link href="slick/slick.css" rel="stylesheet" /> <!-- https://kenwheeler.github.io/slick/ -->
+    <link href="slick/slick-theme.css" rel="stylesheet" />
+	<link href="css/bootstrap.min.css" rel="stylesheet" /> <!-- https://getbootstrap.com -->
+	<link href="css/templatemo-new-vision.css" rel="stylesheet" />
+<!--
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+New Vision Template
 
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+https://templatemo.com/tm-542-new-vision
 
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+-->
 </head>
 <body>
-    <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-            <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+    <!-- Page Header -->
+    <div class="container-fluid">
+        <div class="tm-site-header">
+            <div class="row">
+                <div class="col-12 tm-site-header-col">
+                    <div class="tm-site-header-left">
+                        <i class="far fa-2x fa-eye tm-site-icon"></i>
+                        <h1 class="tm-site-name">New Vision</h1>
+                    </div>
+                    <div class="tm-site-header-right tm-menu-container-outer">
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
+                        <!--Navbar-->
+                        <nav class="navbar navbar-expand-lg">
 
-                    </ul>
+                          <!-- Collapse button -->
+                          <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
+                            aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i
+                                class="fas fa-bars fa-1x"></i></span></button>
 
-                    <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ml-auto">
-                        <!-- Authentication Links -->
-                        @guest
-                            @if (Route::has('login'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                                </li>
-                            @endif
-                            
-                            @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                </li>
-                            @endif
-                        @else
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }}
-                                </a>
+                          <!-- Collapsible content -->
+                          <div class="collapse navbar-collapse tm-nav" id="navbarSupportedContent1">
 
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
+                            <!-- Links -->
+                            <ul class="navbar-nav mr-auto">
+                              <li class="nav-item active">
+                                <a class="nav-link tm-nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link tm-nav-link" href="company.html">Our Company</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link tm-nav-link" href="services.html">Services</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link tm-nav-link" href="contact.html">Contact</a>
+                              </li>
+                            </ul>
+                            <!-- Links -->
 
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
-                                </div>
-                            </li>
-                        @endguest
-                    </ul>
+                          </div>
+                          <!-- Collapsible content -->
+
+                        </nav>
+                        <!--/.Navbar-->
+                    </div>
                 </div>
             </div>
-        </nav>
+        </div>
 
-        <main class="py-4">
-            @yield('content')
+        <div class="row">
+            <div class="col-12">
+                <div class="tm-main-bg"></div>
+            </div>
+        </div>
+
+        <!-- Main -->
+        <main>
+            <!-- Welcome section -->
+            <section class="tm-welcome">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="tm-section-header tm-header-floating">Welcome to New Vision</h2>
+                    </div>
+                </div>
+
+                <div class="row tm-welcome-row">
+                    <article class="col-lg-6 tm-media">
+                        <img src="img/img-3x2-01.jpg" alt="Welcome image" class="img-fluid tm-media-img" />
+                        <div class="tm-media-body">
+                            <a href="#" class="tm-article-link"><h3 class="tm-article-title text-uppercase">Best collection</h3></a>
+                            <p>Aliquam purus arcu, congue a gravida ac, facilisis vel erat. Maecenas pretium sem.</p>
+                        </div>
+                    </article>
+                    <article class="col-lg-6 tm-media">
+                        <img src="img/img-3x2-02.jpg" alt="Welcome image" class="img-fluid tm-media-img" />
+                        <div class="tm-media-body">
+                            <a href="#" class="tm-article-link"><h3 class="tm-article-title text-uppercase">New Design for your website</h3></a>
+                            <p>Aliquam purus arcu, congue a gravida ac, facilisis vel erat. Maecenas pretium sem at nisl malesuada, quis.</p>
+                        </div>
+                    </article>
+                    <article class="col-lg-6 tm-media">
+                        <img src="img/img-3x2-03.jpg" alt="Welcome image" class="img-fluid tm-media-img" />
+                        <div class="tm-media-body">
+                            <a href="#" class="tm-article-link"><h3 class="tm-article-title text-uppercase">Most unique idea ever made</h3></a>
+                            <p>Aliquam purus arcu, congue a gravida ac, facilisis vel erat. Maecenas. <span class="tm-hover-color">Hover #09F</span></p>
+                        </div>
+                    </article>
+                    <article class="col-lg-6 tm-media">
+                        <img src="img/img-3x2-04.jpg" alt="Welcome image" class="img-fluid tm-media-img" />
+                        <div class="tm-media-body">
+                            <a href="#" class="tm-article-link"><h3 class="tm-article-title text-uppercase">Simple touch</h3></a>
+                            <p>Please tell your friends about TemplateMo website. Thank you. Title / Text #666</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="row tm-welcome-row-2">
+                    <div class="col-lg-4 tm-dotted-box-container">
+                        <article class="tm-dotted-box">
+                            <i class="fas fa-3x fa-binoculars tm-article-icon"></i>
+                            <h3 class="tm-article-title">Template Usage</h3>
+                            <p class="tm-article-text">You can feel free to edit and use New Vision template for your commercial websites. Title color is #333</p>
+                            <a class="tm-btn tm-btn-rounded tm-article-link" href="#">More Details</a>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 tm-dotted-box-container">
+                        <article class="tm-dotted-box">
+                            <i class="fas fa-3x fa-microscope tm-article-icon"></i>
+                            <h3 class="tm-article-title">New Vision</h3>
+                            <p class="tm-article-text"><a rel="nofollow" target="_parent" href="https://templatemo.com/tm-542-new-vision">New Vision</a> comes with 4 different HTML pages and provided free of charge by TemplateMo. You can add more pages if you need. Text color is #666</p>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 tm-dotted-box-container">
+                        <article class="tm-dotted-box">
+                            <i class="fas fa-3x fa-glasses tm-article-icon"></i>
+                            <h3 class="tm-article-title">Download Sites</h3>
+                            <p class="tm-article-text">Do not re-distribute our template ZIP file on your website. Or contact us first. Button color is #C99</p>
+                            <a class="tm-btn tm-article-link" href="#">Read More...</a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured -->
+            <section class="tm-featured">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="tm-section-header tm-section-header-small">Featured Carousel Items</h2>
+                    </div>
+                </div>
+
+                <!-- Carousel -->
+                <div class="grid tm-carousel">
+                    <figure class="effect-honey">
+                        <img src="img/gallery-item-01.jpg" alt="Featured Item">
+                        <figcaption>
+                            <h4><i><span>Best</span> HTML Template</i></h4>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-honey">
+                        <img src="img/gallery-item-02.jpg" alt="Featured Item">
+                        <figcaption>
+                            <h4><i><span>Top</span> CSS Theme</i></h4>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-honey">
+                        <img src="img/gallery-item-03.jpg" alt="Featured Item">
+                        <figcaption>
+                            <h4><i><span>Best</span> HTML Template</i></h4>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-honey">
+                        <img src="img/gallery-item-04.jpg" alt="Featured Item">
+                        <figcaption>
+                            <h4><i><span>Great</span> Web Theme</i></h4>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-honey">
+                        <img src="img/gallery-item-05.jpg" alt="Featured Item">
+                        <figcaption>
+                            <h4><i><span>Best</span> HTML Collection</i></h4>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-honey">
+                        <img src="img/gallery-item-06.jpg" alt="Featured Item">
+                        <figcaption>
+                            <h4><i><span>Max</span> CSS Layout</i></h4>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-honey">
+                        <img src="img/gallery-item-07.jpg" alt="Featured Item">
+                        <figcaption>
+                            <h4><i><span>Best</span> HTML Layout</i></h4>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-honey">
+                        <img src="img/gallery-item-08.jpg" alt="Featured Item">
+                        <figcaption>
+                            <h4><i><span>Best</span> CSS Template</i></h4>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            @include('layouts.footer')
+            <!-- End Footer -->
+
         </main>
     </div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/templatemo-script.js"></script>
 </body>
 </html>
