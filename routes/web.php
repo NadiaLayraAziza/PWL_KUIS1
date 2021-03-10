@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
