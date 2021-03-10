@@ -25,11 +25,6 @@ https://templatemo.com/tm-542-new-vision
     <!-- Page Header -->
     @include('layouts.header')
 
-        <div class="row">
-            <div class="col-12">
-                <div class="tm-main-bg"></div>
-            </div>
-        </div>
 
         <!-- Main -->
         <main>

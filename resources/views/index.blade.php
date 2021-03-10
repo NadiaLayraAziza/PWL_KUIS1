@@ -1,5 +1,10 @@
 @extends('layouts.app')
 @section('content')
+<div class="row">
+    <div class="col-12">
+        <div class="tm-main-bg"></div>
+    </div>
+</div>
 <section class="tm-welcome">
     <div class="row">
         <div class="col-12">
