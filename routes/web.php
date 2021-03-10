@@ -15,12 +15,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Auth::routes();
 
 Route::get('/', [HomeController::class, 'index']);
 
 Route::get('/contact', [ContactController::class, 'contact']);
+
+Route::get('/company', [CompanyController::class, 'company']);
+
+Route::get('/service', [ServiceController::class, 'service']);
