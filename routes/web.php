@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\BarangController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\CompanyController;
@@ -26,8 +27,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/contact', [ContactController::class, 'contact']);
 
-Route::get('/company', [CompanyController::class, 'company']);
+// Route::get('/company', [CompanyController::class, 'company']);
 
 Route::get('/service', [ServiceController::class, 'service']);
 
 Route::get('/', [BarangController::class, 'barang']);
+
+Route::get('/company', [PegawaiController::class, 'pegawai']);
