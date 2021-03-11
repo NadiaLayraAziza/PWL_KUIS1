@@ -14,7 +14,10 @@ class CreatePelanggansTable extends Migration
     public function up()
     {
         Schema::create('pelanggans', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id');
+            $table->string('title');
+            $table->text('content');
+            $table->string('featured_image');
             $table->timestamps();
         });
     }
