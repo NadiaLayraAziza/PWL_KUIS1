@@ -23,34 +23,6 @@
             </div>
         </article>
         @endforeach
-        {{-- <article class="col-lg-6 tm-media">
-            <img src="img/img-3x2-01.jpg" alt="Welcome image" class="img-fluid tm-media-img" />
-            <div class="tm-media-body">
-                <a href="#" class="tm-article-link"><h3 class="tm-article-title text-uppercase">Best collection</h3></a>
-                <p>Aliquam purus arcu, congue a gravida ac, facilisis vel erat. Maecenas pretium sem.</p>
-            </div>
-        </article>
-        <article class="col-lg-6 tm-media">
-            <img src="img/img-3x2-02.jpg" alt="Welcome image" class="img-fluid tm-media-img" />
-            <div class="tm-media-body">
-                <a href="#" class="tm-article-link"><h3 class="tm-article-title text-uppercase">New Design for your website</h3></a>
-                <p>Aliquam purus arcu, congue a gravida ac, facilisis vel erat. Maecenas pretium sem at nisl malesuada, quis.</p>
-            </div>
-        </article>
-        <article class="col-lg-6 tm-media">
-            <img src="img/img-3x2-03.jpg" alt="Welcome image" class="img-fluid tm-media-img" />
-            <div class="tm-media-body">
-                <a href="#" class="tm-article-link"><h3 class="tm-article-title text-uppercase">Most unique idea ever made</h3></a>
-                <p>Aliquam purus arcu, congue a gravida ac, facilisis vel erat. Maecenas. <span class="tm-hover-color">Hover #09F</span></p>
-            </div>
-        </article>
-        <article class="col-lg-6 tm-media">
-            <img src="img/img-3x2-04.jpg" alt="Welcome image" class="img-fluid tm-media-img" />
-            <div class="tm-media-body">
-                <a href="#" class="tm-article-link"><h3 class="tm-article-title text-uppercase">Simple touch</h3></a>
-                <p>Please tell your friends about TemplateMo website. Thank you. Title / Text #666</p>
-            </div>
-        </article> --}}
     </div>
     <div class="row">
         <div class="col-12">
@@ -95,13 +67,13 @@
 
     <!-- Carousel -->
     <div class="grid tm-carousel">
-        @foreach ($pelanggan as $customer)
-        <figure class="effect-honey">
-            <img src="{{$customer -> featured_image}}" alt="Featured Item">
-            <figcaption>
-                <h4><i><span>{{$customer -> title}}</span>{{$customer -> content}}</i></h4>
-            </figcaption>
-        </figure>
+        @foreach ($pelanggan as $plg)
+            <figure class="effect-honey">
+                <img src="{{$plg -> featured_image}}" alt="Featured Item">
+                <figcaption>
+                    <h4><i><span>{{$plg -> title}}</span>{{$plg -> content}}</i></h4>
+                </figcaption>
+            </figure>
         @endforeach
     </div>
 </section>

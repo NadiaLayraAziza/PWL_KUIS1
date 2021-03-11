@@ -31,5 +31,3 @@ Route::get('/company', [CompanyController::class, 'company']);
 Route::get('/service', [ServiceController::class, 'service']);
 
 Route::get('/', [BarangController::class, 'barang']);
-
-Route::get('/pelanggan', [BarangController::class, 'pelanggan']);
