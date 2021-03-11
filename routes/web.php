@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\SupplierController;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\BarangController;
 use App\Http\Controllers\ServiceController;
@@ -29,8 +30,10 @@ Route::get('/contact', [ContactController::class, 'contact']);
 
 // Route::get('/company', [CompanyController::class, 'company']);
 
-Route::get('/service', [ServiceController::class, 'service']);
+// Route::get('/service', [ServiceController::class, 'service']);
 
 Route::get('/', [BarangController::class, 'barang']);
 
 Route::get('/company', [PegawaiController::class, 'pegawai']);
+
+Route::get('/service', [SupplierController::class, 'supplier']);
