@@ -13,4 +13,9 @@ class BarangController extends Controller
         return view ('index', ['barang' => $barang]);
     }
 
+    public function pelanggan(){
+        $pelanggan = DB::table('pelanggans');
+        return view ('index', ['pelanggan' => $pelanggan]);
+    }
+
 }
