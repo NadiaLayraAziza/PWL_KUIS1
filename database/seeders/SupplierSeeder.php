@@ -13,7 +13,7 @@ class SupplierSeeder extends Seeder
      */
     public function run()
     {
-        \App\Models\Barang::insert([
+        \App\Models\Supplier::insert([
             [
                 'title' => 'Business Strategy',
                 'content' => 'Business strategy can be understood as the course of action or set of decisions which assist the entrepreneurs in achieving specific business objectives.',

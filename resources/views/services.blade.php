@@ -15,29 +15,20 @@
                 </div>
                 
                 <div class="row tm-welcome-row tm-services">
-                    <div class="col-md-3 col-sm-6">
-                        <figure class="tm-services-img">
-                            <img src="img/services-1.jpg" alt="Image" class="img-fluid">        
-                            <figcaption class="tm-service-description">Business Strategy</figcaption>
-                        </figure>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <figure class="tm-services-img">
-                            <img src="img/services-2.jpg" alt="Image" class="img-fluid">        
-                            <figcaption class="tm-service-description">Digital Marketing</figcaption>
-                        </figure>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <figure class="tm-services-img">
-                            <img src="img/services-3.jpg" alt="Image" class="img-fluid">    
-                            <figcaption class="tm-service-description">Social Platforms</figcaption>
-                        </figure>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <figure class="tm-services-img">
-                            <img src="img/services-4.jpg" alt="Image" class="img-fluid">    
-                            <figcaption class="tm-service-description">New Media</figcaption>
-                        </figure>
+                    @foreach ($supplier as $supp)
+                        <div class="col-md-3 col-sm-6">
+                            <figure class="tm-services-img">
+                                <figcaption class="tm-service-description">{{$supp -> title}}</figcaption>
+                                <img src="{{$supp -> featured_image}}" alt="Image" class="img-fluid">     
+                                <h6> <br> {{$supp -> content}}</h6>
+                            </figure>
+                        </div>
+                    @endforeach
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        {{$supplier->links('paginate')}}
                     </div>
                 </div>
                 
