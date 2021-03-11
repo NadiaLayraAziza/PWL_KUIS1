@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BarangController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\ContactController;
@@ -21,10 +22,12 @@ use Illuminate\Support\Facades\Route;
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/', [HomeController::class, 'index']);
+// Route::get('/', [HomeController::class, 'index']);
 
 Route::get('/contact', [ContactController::class, 'contact']);
 
 Route::get('/company', [CompanyController::class, 'company']);
 
 Route::get('/service', [ServiceController::class, 'service']);
+
+Route::get('/', [BarangController::class, 'barang']);
