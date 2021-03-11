@@ -14,7 +14,12 @@ class CreatePegawaisTable extends Migration
     public function up()
     {
         Schema::create('pegawais', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id');
+            $table->string('name');
+            $table->text('fb');
+            $table->text('twitter');
+            $table->text('ig');
+            $table->string('featured_image');
             $table->timestamps();
         });
     }
