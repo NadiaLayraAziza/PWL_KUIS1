@@ -12,6 +12,7 @@
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
           <a class="nav-link tm-nav-link" href="{{url('/')}}">Home</span></a>
+          <a class="nav-link tm-nav-link" href="{{url('/barang')}}">Barang</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link tm-nav-link" href="{{url('/company')}}">Our Company</a>

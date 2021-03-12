@@ -10,6 +10,6 @@ class DBarang extends Model
     use HasFactory;
 
     public static function barang(){
-        return DBarang::paginate(5);
+        return DBarang::paginate(3);
     }
 }

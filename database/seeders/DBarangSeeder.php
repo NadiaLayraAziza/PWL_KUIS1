@@ -61,7 +61,7 @@ class DBarangSeeder extends Seeder
                 'kode' => 'B07',
                 'nama_barang' => 'DA Headset Gaming Titan Premium Black',
                 'stok' => 210,
-                'harga' => 578.999
+                'harga' => 578999
             ],
             [
                 'gambar' => '/img/barang-08.jpg',
