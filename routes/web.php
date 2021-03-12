@@ -6,6 +6,7 @@ use App\Http\Controllers\BarangController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\DBarangController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -37,3 +38,5 @@ Route::get('/', [BarangController::class, 'barang']);
 Route::get('/company', [PegawaiController::class, 'pegawai']);
 
 Route::get('/service', [SupplierController::class, 'supplier']);
+
+Route::get('/barang', [DBarangController::class, 'barang']);
