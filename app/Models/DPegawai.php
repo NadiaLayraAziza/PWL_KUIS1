@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class DPegawai extends Model
 {
     use HasFactory;
+
+    public static function pegawai(){
+        return DPegawai::paginate(5);
+    }
 }
