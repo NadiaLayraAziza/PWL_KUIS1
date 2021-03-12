@@ -19,5 +19,6 @@ class DatabaseSeeder extends Seeder
         $this->call(SupplierSeeder::class);
         $this->call(DBarangSeeder::class);
         $this->call(DPelangganSeeder::class);
+        $this->call(DPegawaiSeeder::class);
     }
 }
