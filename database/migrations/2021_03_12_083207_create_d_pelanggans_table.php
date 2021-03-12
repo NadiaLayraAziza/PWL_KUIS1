@@ -14,7 +14,11 @@ class CreateDPelanggansTable extends Migration
     public function up()
     {
         Schema::create('d_pelanggans', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id');
+            $table->string('id_pelanggan');
+            $table->text('nama');
+            $table->text('alamat');
+            $table->string('nomor_hp');
             $table->timestamps();
         });
     }
