@@ -16,6 +16,7 @@
         </li>
         <li class="nav-item">
           <a class="nav-link tm-nav-link" href="{{url('/company')}}">Our Company</a>
+          <a class="nav-link tm-nav-link" href="{{url('/pelanggan')}}">Pelanggan</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link tm-nav-link" href="{{url('/service')}}">Services</a>
