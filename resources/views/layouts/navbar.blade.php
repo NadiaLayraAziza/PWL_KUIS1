@@ -24,6 +24,7 @@
         </li>
         <li class="nav-item">
           <a class="nav-link tm-nav-link" href="{{url('/contact')}}">Contact</a>
+          <a class="nav-link tm-nav-link" href="{{url('/supplier')}}">Supplier</span></a>
         </li>
       </ul>
       <!-- Links -->
