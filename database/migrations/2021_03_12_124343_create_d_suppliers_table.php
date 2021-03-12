@@ -14,7 +14,12 @@ class CreateDSuppliersTable extends Migration
     public function up()
     {
         Schema::create('d_suppliers', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id');
+            $table->string('logo');
+            $table->string('nama_perusahaan');
+            $table->text('alamat');
+            $table->string('telepon');
+            $table->string('persediaan');
             $table->timestamps();
         });
     }
