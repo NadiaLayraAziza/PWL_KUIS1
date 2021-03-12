@@ -20,5 +20,6 @@ class DatabaseSeeder extends Seeder
         $this->call(DBarangSeeder::class);
         $this->call(DPelangganSeeder::class);
         $this->call(DPegawaiSeeder::class);
+        $this->call(DSupplierSeeder::class);
     }
 }
