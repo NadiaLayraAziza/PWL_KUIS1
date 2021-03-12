@@ -9,6 +9,7 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\DBarangController;
 use App\Http\Controllers\DPelangganController;
 use App\Http\Controllers\DPegawaiController;
+use App\Http\Controllers\DSupplierController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -46,3 +47,5 @@ Route::get('/barang', [DBarangController::class, 'barang']);
 Route::get('/pelanggan', [DPelangganController::class, 'pelanggan']);
 
 Route::get('/pegawai', [DPegawaiController::class, 'pegawai']);
+
+Route::get('/supplier', [DSupplierController::class, 'supplier']);
