@@ -10,7 +10,7 @@
                 </tr>
                 @foreach ($pelanggan as $item)
                     <tr>
-                        <td>{{$item->id}}</td><td><img src="{{$item->id_pelanggan}}"></td><td>{{$item->nama}}</td><td>{{$item->alamat}}</td><td>{{$item->nomor_hp}}</td>
+                        <td>{{$item->id}}</td><td>{{$item->id_pelanggan}}</td><td>{{$item->nama}}</td><td>{{$item->alamat}}</td><td>{{$item->nomor_hp}}</td>
                     </tr>
                 @endforeach
             </table>

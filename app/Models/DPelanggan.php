@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class DPelanggan extends Model
 {
     use HasFactory;
+
+    public static function pelanggan(){
+        return DPelanggan::paginate(5);
+    }
 }
