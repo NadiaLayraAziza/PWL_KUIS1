@@ -20,6 +20,7 @@
         </li>
         <li class="nav-item">
           <a class="nav-link tm-nav-link" href="{{url('/service')}}">Services</a>
+          <a class="nav-link tm-nav-link" href="{{url('/pegawai')}}">Pegawai</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link tm-nav-link" href="{{url('/contact')}}">Contact</a>
